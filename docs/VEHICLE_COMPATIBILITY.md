@@ -28,6 +28,38 @@ Assessment baseline: 2021 Hyundai Sonata DN8 Limited, assumed US-market 10.25-in
 
 Do not treat “March 2026” as the vehicle's installed software version. Hyundai's update catalog is dynamic and varies by region and head-unit platform. Record the exact version shown in Settings → General → SW Info/Update, including platform/model code and map version, then compare it with Hyundai's official VIN/model lookup. Sonata 2020–22 is listed under Standard Gen5W Navigation in the US catalog.
 
+
+
+## Confirmed vehicle configuration (owner-provided, 2026-11-21)
+
+The owner supplied the following head-unit identifiers. The device ID/serial is deliberately not stored in this repository because it is not needed for compatibility engineering.
+
+- Model code: `DN8AS.S5BMC.US`
+- Platform: Standard Gen5W Navigation (matched against Hyundai's official US update catalog)
+- Installed software: `DN8.USA.S5W_M.V015.012.260507`
+- Firmware: `DN8.USA.301.250221.MICOM.D`
+- Navigation app: `STD5W.NAM.HMC.260119.b7b3a44`
+- Installed map: `NAM.19.41.41.010.512.0`
+
+### Official update comparison as of 2026-11-21
+
+Hyundai's official US update catalog lists the same model code `DN8AS.S5BMC.US` with Standard Gen5W Navigation release `DN8.USA.S5W_M.V016.010.260903`, release month 11.2026, and map `NAM.19.45.67.021.512.0`. The owner-installed V015.012.260507 / NAM.19.41.41.010.512.0 is older. Confirm the update through Hyundai's official update application using the exact model/platform selection before installing; back up personal settings and follow Hyundai's USB update instructions. Do not install a file intended for a different DN8 variant.
+
+Official source: https://update.hyundai.com/US/EN/updateNoticeView/software-version
+
+### Refined projection conclusion
+
+The confirmed model code maps to the US 2020–2022 Sonata Standard Gen5W navigation head unit. Keep the application compatibility profile set to **wired Android Auto as the expected factory projection path**. Do not advertise wireless Android Auto as supported based only on this model/software identifier. The Hyundai wireless Android Auto bulletin previously identified is scoped to Display Audio Value non-navigation hardware. A real vehicle test remains the final confirmation, especially after any official head-unit update.
+
+The exact software identifiers improve platform matching but do not independently expose supported wireless projection protocols, Wi-Fi Direct receiver roles, or Miracast sink capability. Do not infer those features from the presence of a Wi-Fi radio.
+
+### Confirmed data versus outstanding tests
+
+- Confirmed by owner: model code, installed software, firmware, navigation app and map version.
+- Confirmed by Hyundai catalog: Standard Gen5W platform mapping and newer listed release for the same model code.
+- Still requires physical test: USB Android Auto session, Bluetooth A2DP/AVRCP/HFP behavior, and whether any wireless projection menu/receiver mode is present.
+- Not established: factory Miracast, arbitrary display mirroring, or user-accessible Wi-Fi Direct receiver.
+
 ## Physical verification checklist
 
 1. Confirm market, VIN-derived trim, and head-unit type (Navigation vs Display Audio).
