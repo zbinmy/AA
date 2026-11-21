@@ -12,6 +12,10 @@ Not yet implemented: full MediaStore library indexing, playable queue and playli
 
 For the assumed US 2021 Sonata Limited with 10.25-inch navigation: wired Android Auto is documented through the USB data/smartphone port. Wireless Android Auto is **not established** for this navigation unit; Hyundai's 2021 wireless projection bulletin is scoped to Display Audio Value non-navigation units. Factory Bluetooth streaming/hands-free calling are supported, but profile-level behavior must be tested on the actual car. Arbitrary screen mirroring is not a supported Android Auto media-app capability.
 
+## Confirmed head-unit target
+
+Owner-provided model code `DN8AS.S5BMC.US` identifies the US Standard Gen5W Navigation platform. Installed software is `DN8.USA.S5W_M.V015.012.260507`; Hyundai's November 2026 catalog lists `DN8.USA.S5W_M.V016.010.260903` for this model code, with map `NAM.19.45.67.021.512.0`. See [vehicle compatibility report](docs/VEHICLE_COMPATIBILITY.md). A device serial/ID is intentionally excluded from source control.
+
 ## Project modules
 
 - `app` — Android entry point, manifest, Hilt bootstrap
