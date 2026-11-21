@@ -2,8 +2,8 @@
 
 ## Requirements
 - Android Studio with JDK 17
-- Android SDK Platform 36 and matching build tools
-- Android phone running Android 8.0 or newer (Android 17 compatibility is intended but must be tested on a physical Android 17 device)
+- Android SDK Platform 37 (Android 17) and matching build tools
+- Android phone running Android 8.0 or newer; compileSdk and targetSdk are set to Android 17 / API 37
 - USB data cable for factory Android Auto connection
 
 ## Build debug APK
